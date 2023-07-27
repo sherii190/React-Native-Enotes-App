@@ -27,7 +27,7 @@ Welcome to the Note-taking App with React Native! This app allows you to create,
 
 3. Run the app:
 
- - npm start
+ - npx expo start
 
 ## How to Contribute:
 If you'd like to contribute to this project, follow these steps:
