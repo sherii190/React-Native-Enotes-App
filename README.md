@@ -6,7 +6,6 @@ Welcome to the Note-taking App with React Native! This app allows you to create,
 
 - Log in or create an account to secure your notes.
 - Create new notes and edit existing ones.
-- Organize notes with categories or tags.
 - User-friendly interface for easy navigation.
 
 ## Tech Stack 🛠️
