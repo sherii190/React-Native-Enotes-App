@@ -1,5 +1,5 @@
 # Note-taking App with React Native 📝📱💻
-
+![/assets/enotes.jpg](/assets/enotes.jpg)
 Welcome to the Note-taking App with React Native! This app allows you to create, organize, and secure your notes by logging in or creating an account. Whether you need to jot down personal notes, shopping lists, or to-do lists, this app helps you keep everything organized and private.
 
 ## Features ✨
