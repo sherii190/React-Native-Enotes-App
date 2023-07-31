@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { View, StyleSheet, Image, TouchableOpacity, Alert } from "react-native";
+import {
+  View,
+  StyleSheet,
+  TextInput,
+  Image,
+  Text,
+  TouchableOpacity,
+} from "react-native";
 import { Input, Button } from "react-native-elements";
 import { auth } from "../../config";
 import { RFPercentage } from "react-native-responsive-fontsize";
@@ -18,7 +25,6 @@ const LoginScreen = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigation = useNavigation();
-
   const handleLogin = () => {
     auth
       .signInWithEmailAndPassword(email, password)
@@ -30,20 +36,6 @@ const LoginScreen = (props) => {
       .catch((error) => {
         // Handle login errors
         console.log("Login error:", error);
-        if (
-          error.code === "auth/invalid-email" ||
-          error.code === "auth/wrong-password"
-        ) {
-          Alert.alert(
-            "Invalid email or password",
-            "Please enter a valid email and password."
-          );
-        } else {
-          Alert.alert(
-            "Login Error",
-            "An error occurred during login. Please try again later."
-          );
-        }
       });
   };
 

@@ -6,7 +6,7 @@ import {
   Image,
   TouchableOpacity,
 } from "react-native";
-import { Alert } from "react-native";
+
 import { Input, Button } from "react-native-elements";
 import { auth } from "../../config";
 import { RFPercentage } from "react-native-responsive-fontsize";
@@ -34,16 +34,10 @@ const SignUpScreen = (props) => {
       })
       .catch((error) => {
         // Handle signup errors
-        if (error.code === "auth/email-already-in-use") {
-          Alert.alert(
-            "Already Registered",
-            "The email address is already registered."
-          );
-        } else {
-          console.log("Signup error:", error);
-        }
+        console.log("Signup error:", error);
       });
   };
+
   return (
     <View style={styles.container}>
       <View style={styles.logocontainer}>
