@@ -34,6 +34,8 @@ export default function AddNote(props) {
         // Clear the input fields after adding the document
         setTitle("");
         setNotes("");
+        // Navigate back to the "Home" screen
+        props.navigation.navigate("Home");
       } catch (error) {
         console.log("Error adding document:", error);
       }
